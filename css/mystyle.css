@@ -1,5 +1,5 @@
 .container-fluid {
-    background-color: #21144e !important;
+    background-color: #9c27b0 !important;
     border-color: #16161f !important;
 
 }
@@ -10,35 +10,44 @@
     background:#00FFFF; /*your color choice*/
     color:#fff;
     text-shadow:none;
-   
+    font-style: bold;
     
+}
+
+header {
+text-align: center;
 }
 
 .navbar-nav, .navbar-brand {
     float: left;
     margin: 0;
-            padding-left: 60px !important;
-    margin-left: 100px !important;
 }
+.navbar-brand>img{
+    margin-right: 15px;
+    display: inline-block !important;
+}
+/*.navbar-brand{
+display: inline-block;
+}*/
 .nav {list-style: none; }
 
 #tabs li a.active {
     background:#00FFFF;
-    padding-left: 50px;
+     font-style: bold;
 }
 
-#slogan { top: 0;
-  position: fixed;
+#slogan {
     color:#fff;
-        padding-left: 220px;
-    padding-top: 15px;
-
+     font-style: bold;
+  }
+header{
+      text-align:center;
   }
 h2 {
-    font-size: 40px;
-    align-content: center;
-    padding-top: 50px;
-    padding-left: 350px;
+    font-size: 200%;
+    padding-top: 5%;
+    padding-left: 5%;
+    text-align: center;
     color: black;
     font-style: bold;
     font-family: serif;
@@ -46,10 +55,10 @@ h2 {
 }
 
 p {
-    font-size: 20px;
-    align-content: center;
-    padding-top: 0px;
-    padding-left: 400px;
+    font-size: 150%;
+   text-align:center;
+    padding-top: 1%;
+    padding-left: 5%;
     color: black;
     font-style: bold;
     font-family: serif;
@@ -75,10 +84,7 @@ img {margin: auto auto; }
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
 }
-.carousel {
-    position: relative;
-    padding-top: 50px;
-}
+
 
 /* Position the "next button" to the right */
 .next {
@@ -125,10 +131,13 @@ img {margin: auto auto; }
 }
 
 .navbar-inverse .navbar-nav>.active>a {
-    background-color: lightslategray !important;
+    background-color: white;
+    color: white;
     
 }
-#myCarousel {padding-top: 20px;}
+.navbar-inverse .navbar-nav>li>a {
+    color: white; }
+
 @media (min-width: 768px)
     .container-fluid>.navbar-collapse {
     margin-right: 0;
@@ -285,22 +294,32 @@ span.psw {
         width: 100%;
     }
 }
-.carousel-indicators {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    z-index: 15;
-    width: 60%;
-    padding-left: 0;
-    margin-left: -30%;
-    text-align: center;
-    list-style: none;
-    padding-bottom: 200px !important;
-}
+
     
-address{
-    font-size:80%;
-    margin:0px;
-    color:#0f0f0f;
+
+    .row-footer {
+    background: #666666;
+    }
+    
+
+    .custom {
+        width: 45px;
+        height: 150px;
+    }
+    .btn-group btn-group-xs
+    { width: 5%;    
+    }
+    
+    
+    .carousel {
+  background: #1a237e;
 }
-  
+.carousel .item {
+  height: 300px;
+}
+.carousel .item img {
+  left: 0;
+  min-height: 300px;
+  position: absolute;
+  top: 0;
+}

@@ -1,14 +1,17 @@
-var slideIndex = 0;
-showSlides();
+  
+// Get the modal
+var modal = document.getElementById('id01');
 
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none"; 
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
     }
-    slideIndex++;
-    if (slideIndex> slides.length) {slideIndex = 1} 
-    slides[slideIndex-1].style.display = "block"; 
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+var main = function(){
+    $('.dropdown-toggle').click(function(){
+        $('.dropdrown-menu').toggle();
+    });
+};
+
+$(document).ready(main);
